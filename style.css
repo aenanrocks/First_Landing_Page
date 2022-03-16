@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -25,66 +27,98 @@ body{
     padding: 0 15%;
 }
 
-.header>ul{
+.header ul{
     display: flex;
     align-items: right;
     font-size: 18px;
+    gap: 10px;
 }
 
-.header>ul>li{
+.header ul li{
     list-style: none;
     font-size: 20px;
 }
 
-header>h2{
+.header h2{
     font-size: 24px;
+}
+
+.header img{
+    width: 100px;
 }
 
 .front{
     width: 100%;
-    background-color: #f5f5f5;
+    background: #1F2937;
+    background: -moz-linear-gradient(top, #1F2937 0%, #2CAAFF 100%);
+    background: -webkit-linear-gradient(top, #1F2937 0%, #2CAAFF 100%);
+    background: linear-gradient(to bottom, #1F2937 0%, #2CAAFF 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
     align-items: center;
     padding:10% 15%;
-    gap: 10px;
-    
+    gap: 15px;
 }
 
-.front>.front-info{
+.front h1{
+    font-size: 48px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(255, 255, 255) 0px -1px 4px, rgb(255, 255, 0) 0px -2px 10px, rgb(255, 128, 0) 0px -10px 20px, rgb(255, 0, 0) 0px -18px 40px;
+    --darkreader-inline-color:#e8e6e3;
+    --darkreader-inline-bgimage: initial;
+    --darkreader-inline-bgcolor:#262a2b;
+}
+
+.front .front-info{
     flex:1;
 }
 
-.front>img{
+.front img{
     flex:1;
 }
 
 .front-info{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.front-info p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+button{
+    background-color: #3882f6;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #e5e7eb;
+    padding: 5px 35px;
+    border: none;
+    font-weight: bold;
 }
 
 .cards-info{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #f5f5f5;
+    background: #2CAAFF;
+background: -moz-linear-gradient(top, #2CAAFF 0%, #f5f5f5 100%);
+background: -webkit-linear-gradient(top, #2CAAFF 0%, #f5f5f5 100%);
+background: linear-gradient(to bottom, #2CAAFF 0%, #f5f5f5 100%);
     box-sizing: border-box;
     padding: 0 10%;
 }
 
 .card-layout{
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #f5f5f5;
     box-sizing: border-box;
     gap: 10px;
     padding: 10%;
@@ -92,11 +126,8 @@ header>h2{
 
 .card{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;    align-items: center;
     width: 100%;
-    background-color: #f5f5f5;
     box-sizing: border-box;
 }
 
